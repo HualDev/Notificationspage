@@ -1,0 +1,134 @@
+:root{
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrayishBlue1: hsl(211, 68%, 94%);
+    --lightGrayishBlue2: hsl(205, 33%, 90%);
+    --grayishBlue: hsl(219, 14%, 63%);
+    --darkGrayishBlue: hsl(219, 12%, 42%);
+    --veryDarkBlue: hsl(224, 21%, 14%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+main{
+    background-color: var(--white);
+    padding: 1rem;
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+h1{
+    font-size: 1rem;
+}
+
+.number{
+    background-color: var(--veryDarkBlue);
+    color: var(--white);
+    padding: 0.15rem 0.6rem;
+    border-radius: 0.3rem;
+    font-weight: 800;
+}
+
+.mark{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.comment{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: var(--lightGrayishBlue1);
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.comment p{
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.circle{
+    color: red;
+    margin-left: 0.5rem;
+    font-size: 0.5rem;
+}
+
+.ago{
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--grayishBlue);
+    font-size: 0.9rem;
+}
+
+.black{
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.chess{
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.privateMessage{
+    border: solid var(--grayishBlue) 1.5px;
+    border-radius: 0.5rem;
+    color: var(--darkGrayishBlue);
+    padding: 1rem;
+    margin-top: 0.6rem;
+}
+
+.read{
+    background-color: var(--white);
+}
+
+.attribution {
+    font-size:0.7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:700px) {
+    body{
+        background-color: var(--lightGrayishBlue2);
+    }
+
+    main{
+        max-width: 650px;
+        margin: 2rem auto;
+        border-radius: 1rem;
+
+    }
+}

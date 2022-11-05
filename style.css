@@ -53,6 +53,15 @@ h1{
     font-weight: 500;
 }
 
+.mark:hover{
+    cursor: pointer;
+}
+
+strong:hover, .chess:hover, .black:hover{
+    cursor: pointer;
+    color: var(--blue);
+}
+
 .comment{
     display: flex;
     justify-content:flex-start;
@@ -106,8 +115,17 @@ img{
     margin-top: 0.6rem;
 }
 
+.privateMessage:hover{
+    cursor: pointer;
+    background-color: var(--lightGrayishBlue1);
+}
+
 .read{
     background-color: var(--white);
+}
+
+.myPicture:hover{
+    cursor: pointer;
 }
 
 .attribution {

@@ -11,6 +11,6 @@ mark.addEventListener('click',()=>{
    for(i=0;i<circle.length;i++){
     circle[i].style.display='none'
    } 
-   console.log(number)
+   
    number.innerHTML='0'
 })
